@@ -1,0 +1,26 @@
+ddzs =
+(F1 + F2 + F3 + F4 - c1*dzs - c2*dzs - c3*dzs - c4*dzs + c1*dzu1 + c2*dzu2 + c3*dzu3 + c4*dzu4 - ks1*zs - ks2*zs - ks3*zs - ks4*zs + ks1*zu1 + ks2*zu2 + ks3*zu3 + ks4*zu4 - c1*dtheta*l1 - c2*dtheta*l1 + c3*dtheta*l2 + c4*dtheta*l2 - c1*dphi*w1 + c2*dphi*w1 - c3*dphi*w2 + c4*dphi*w2 - ks1*l1*theta - ks2*l1*theta + ks3*l2*theta + ks4*l2*theta - ks1*phi*w1 + ks2*phi*w1 - ks3*phi*w2 + ks4*phi*w2)/ms
+ 
+ddtheta =
+-(F3*l2 - F2*l1 - F1*l1 + F4*l2 + ks1*l1^2*theta + ks2*l1^2*theta + ks3*l2^2*theta + ks4*l2^2*theta + c1*dzs*l1 + c2*dzs*l1 - c3*dzs*l2 - c4*dzs*l2 - c1*dzu1*l1 - c2*dzu2*l1 + c3*dzu3*l2 + c4*dzu4*l2 + ks1*l1*zs + ks2*l1*zs - ks3*l2*zs - ks4*l2*zs - ks1*l1*zu1 - ks2*l1*zu2 + ks3*l2*zu3 + ks4*l2*zu4 + c1*dtheta*l1^2 + c2*dtheta*l1^2 + c3*dtheta*l2^2 + c4*dtheta*l2^2 + c1*dphi*l1*w1 - c2*dphi*l1*w1 - c3*dphi*l2*w2 + c4*dphi*l2*w2 + ks1*l1*phi*w1 - ks2*l1*phi*w1 - ks3*l2*phi*w2 + ks4*l2*phi*w2)/Is
+ 
+ddphi =
+-(F2*w1 - F1*w1 - F3*w2 + F4*w2 + ks1*phi*w1^2 + ks2*phi*w1^2 + ks3*phi*w2^2 + ks4*phi*w2^2 + c1*dzs*w1 - c2*dzs*w1 + c3*dzs*w2 - c4*dzs*w2 - c1*dzu1*w1 + c2*dzu2*w1 - c3*dzu3*w2 + c4*dzu4*w2 + ks1*w1*zs - ks2*w1*zs + ks3*w2*zs - ks4*w2*zs - ks1*w1*zu1 + ks2*w1*zu2 - ks3*w2*zu3 + ks4*w2*zu4 + c1*dphi*w1^2 + c2*dphi*w1^2 + c3*dphi*w2^2 + c4*dphi*w2^2 + c1*dtheta*l1*w1 - c2*dtheta*l1*w1 - c3*dtheta*l2*w2 + c4*dtheta*l2*w2 + ks1*l1*theta*w1 - ks2*l1*theta*w1 - ks3*l2*theta*w2 + ks4*l2*theta*w2)/Ir
+ 
+ddzu1 =
+(c1*dzs - F1 - c1*dzu1 + kt1*r1 + ks1*zs - ks1*zu1 - kt1*zu1 + c1*dtheta*l1 + c1*dphi*w1 + ks1*l1*theta + ks1*phi*w1)/mu1
+ 
+ddzu2 =
+-(F2 - c2*dzs + c2*dzu2 - kt2*r2 - ks2*zs + ks2*zu2 + kt2*zu2 - c2*dtheta*l1 + c2*dphi*w1 - ks2*l1*theta + ks2*phi*w1)/mu2
+ 
+ddzu3 =
+-(F3 - c3*dzs + c3*dzu3 - kt3*r3 - ks3*zs + ks3*zu3 + kt3*zu3 + c3*dtheta*l2 - c3*dphi*w2 + ks3*l2*theta - ks3*phi*w2)/mu3
+ 
+ddzu4 =
+-(F4 - c4*dzs + c4*dzu4 - kt4*r4 - ks4*zs + ks4*zu4 + kt4*zu4 + c4*dtheta*l2 + c4*dphi*w2 + ks4*l2*theta + ks4*phi*w2)/mu4
+ 
+{Model 'FULL_CAR_SIM' was created with a newer version (R2025b) of Simulink
+To disable this error message, use Simulink preferences.
+To create a model that is compatible with this version of Simulink, load the
+model in Simulink R2025b and select Save > Export Model to > Previous Version.
+} 

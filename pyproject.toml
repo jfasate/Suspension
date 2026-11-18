@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "full-car-suspension"
+version = "0.1.0"
+description = "Seven-DOF full-car active suspension simulation and constrained control"
+requires-python = ">=3.10"
+dependencies = ["numpy==1.26.4", "scipy==1.15.3", "matplotlib==3.5.3", "osqp==1.0.4", "Pillow==11.3.0"]
+
+[project.scripts]
+suspension = "suspension.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["suspension*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,18 @@
+{
+  "dt": 0.02,
+  "horizon": 20,
+  "weights": {
+    "cg_accel": 3.0,
+    "seat_accel": 2.0,
+    "attitude": 5.0,
+    "angular_rate": 0.6,
+    "travel": 0.6,
+    "tire_load": 0.8,
+    "effort": 0.04,
+    "delta_force": 0.08,
+    "slack": 10000.0
+  },
+  "seat_xy": [0.5, 0.35],
+  "min_normal_fraction": 0.1,
+  "osqp_tolerance": 0.0003
+}
